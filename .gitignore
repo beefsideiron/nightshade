@@ -1,1 +1,4 @@
-agents.md
+agents.mdlogs/
+__pycache__/
+*.pyc
+.pytest_cache/
