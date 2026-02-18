@@ -1,4 +1,23 @@
-agents.mdlogs/
+# Local instructions
+agents.md
+AGENTS.md
+
+# Python leftovers / cache
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Runtime/log outputs
+logs/
+results/
+
+# Garmin / ConnectIQ build artifacts
+gen/
+internal-mir/
+external-mir/
+*.mir
+*.prg
+*.prg.debug.xml
+
+# Optional local secrets
+developer_key.pem
