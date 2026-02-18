@@ -91,10 +91,6 @@ def predict_sunlight_loss(
     civil_dawn = civil_twilight["civil_dawn"]
     civil_dusk = civil_twilight["civil_dusk"]
 
-    # Get horizon sunrise/sunset times (sun at 0 degrees)
-    horizon_sunrise = solar_calc._find_altitude_crossing(date, 0, search_forward=False)
-    horizon_sunset = solar_calc._find_altitude_crossing(date, 0, search_forward=True)
-
     # Generate solar positions throughout the day
     solar_positions = []
     current_time = date.replace(hour=0, minute=0, second=0, microsecond=0)
@@ -160,19 +156,11 @@ def predict_sunlight_loss(
         "date": date.isoformat(),
         "timezone": timezone,
         "has_sunlight": len(solar_positions) > 0,
-        "sunrise": sunrise_time.isoformat() if sunrise_time else None,
-        "sun_altitude_at_rise": sunrise_altitude,
-        "sun_azimuth_at_rise": sunrise_azimuth,
-        "sunset": sunset_time.isoformat() if sunset_time else None,
-        "sun_altitude_at_set": sunset_altitude,
-        "sun_azimuth_at_set": sunset_azimuth,
-        "terrain_obstruction_time": terrain_obstruction_time.isoformat() if terrain_obstruction_time else None,
-        "sun_altitude_at_obstruction": terrain_obstruction_altitude,
-        "sun_azimuth_at_obstruction": terrain_obstruction_azimuth,
+        "terrain_sunset": terrain_obstruction_time.isoformat() if terrain_obstruction_time else None,
+        "terrain_sunset_altitude": terrain_obstruction_altitude,
+        "terrain_sunset_azimuth": terrain_obstruction_azimuth,
         "civil_dawn": civil_dawn.isoformat() if civil_dawn else None,
         "civil_dusk": civil_dusk.isoformat() if civil_dusk else None,
-        "horizon_sunrise": horizon_sunrise.isoformat() if horizon_sunrise else None,
-        "horizon_sunset": horizon_sunset.isoformat() if horizon_sunset else None,
         "terrain_obstruction": terrain_file is not None,
     }
 
@@ -331,18 +319,14 @@ def main():
             print(f"\n📅 Date: {current_date.strftime('%A, %Y-%m-%d')}")
             print("-" * 70)
 
-            if result["has_sunlight"]:
-                sunrise_time = datetime.fromisoformat(result['sunrise'])
-                sunset_time = datetime.fromisoformat(result['sunset'])
+            if result["has_sunlight"] and result["terrain_sunset"]:
+                terrain_sunset_dt = datetime.fromisoformat(result['terrain_sunset'])
                 civil_dawn = datetime.fromisoformat(result['civil_dawn']) if result['civil_dawn'] else None
                 civil_dusk = datetime.fromisoformat(result['civil_dusk']) if result['civil_dusk'] else None
-                terrain_obstruction_dt = datetime.fromisoformat(result['terrain_obstruction_time']) if result['terrain_obstruction_time'] else None
                 
-                sunrise_local = format_time(sunrise_time, result['timezone'])
-                sunset_local = format_time(sunset_time, result['timezone'])
+                terrain_sunset_local = format_time(terrain_sunset_dt, result['timezone'])
                 civil_dawn_local = format_time(civil_dawn, result['timezone']) if civil_dawn else "N/A"
                 civil_dusk_local = format_time(civil_dusk, result['timezone']) if civil_dusk else "N/A"
-                terrain_obstruction_local = format_time(terrain_obstruction_dt, result['timezone']) if terrain_obstruction_dt else "N/A"
                 
                 print(f"\n☀️  SUNSET (Horizon - 0° altitude):")
                 print(f"  Sunrise:  {sunrise_local} {result['timezone']}")
