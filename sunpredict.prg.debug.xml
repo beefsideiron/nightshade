@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="D:\EDB\nightshade\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="1" lineNum="7" parent="globals/MyWatchView" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\SunPredictApp.mc" id="2" lineNum="34" parent="globals" pc="268435472" symbol="getApp"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\SunPredictApp.mc" id="2" lineNum="35" parent="globals" pc="268435482" symbol="getApp"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="3" lineNum="5" parent="globals/MyWatchAboutView" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\EDB\\nightshade\\gen\\006-B4313-00\\source\\Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="5" lineNum="4" parent="globals/MyWatchDelegate" pc="268435525" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="6" lineNum="80" parent="globals/MyWatchAboutDelegate" pc="268435537" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="7" lineNum="5" parent="globals/MyWatchMenuView" pc="268435549" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="8" lineNum="95" parent="globals/MyWatchMenuDelegate" pc="268435561" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\SunPredictApp.mc" id="9" lineNum="14" parent="globals/SunPredictApp" pc="268435573" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="10" lineNum="93" parent="globals/MyWatchSettingsDelegate" pc="268435585" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="11" lineNum="5" parent="globals/MyWatchSettingsView" pc="268435597" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="11" lineNum="9" parent="globals/MyWatchSettingsView" pc="268435608" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="12" lineNum="30" parent="globals/MyWatchView" pc="268435621" symbol="onShow"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="12" lineNum="32" parent="globals/MyWatchView" pc="268435624" symbol="onShow"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="12" lineNum="33" parent="globals/MyWatchView" pc="268435636" symbol="onShow"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="12" lineNum="34" parent="globals/MyWatchView" pc="268435657" symbol="onShow"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="12" lineNum="35" parent="globals/MyWatchView" pc="268435666" symbol="onShow"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="13" lineNum="23" parent="globals/MyWatchView" pc="268435682" symbol="onLayout"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="13" lineNum="24" parent="globals/MyWatchView" pc="268435684" symbol="onLayout"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="14" lineNum="11" parent="globals/MyWatchView" pc="268435718" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="14" lineNum="12" parent="globals/MyWatchView" pc="268435721" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="14" lineNum="15" parent="globals/MyWatchView" pc="268435733" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="14" lineNum="16" parent="globals/MyWatchView" pc="268435745" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="14" lineNum="17" parent="globals/MyWatchView" pc="268435766" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="14" lineNum="18" parent="globals/MyWatchView" pc="268435775" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="16" lineNum="40" parent="globals/MyWatchView" pc="268435791" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="16" lineNum="42" parent="globals/MyWatchView" pc="268435794" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="16" lineNum="43" parent="globals/MyWatchView" pc="268435806" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="16" lineNum="46" parent="globals/MyWatchView" pc="268435853" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="16" lineNum="47" parent="globals/MyWatchView" pc="268435865" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="16" lineNum="50" parent="globals/MyWatchView" pc="268435873" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="16" lineNum="53" parent="globals/MyWatchView" pc="268435889" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="16" lineNum="54" parent="globals/MyWatchView" pc="268435898" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="16" lineNum="57" parent="globals/MyWatchView" pc="268435907" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchView.mc" id="16" lineNum="66" parent="globals/MyWatchView" pc="268435965" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="18" lineNum="20" parent="globals/MyWatchAboutView" pc="268435995" symbol="onLayout"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="18" lineNum="21" parent="globals/MyWatchAboutView" pc="268435997" symbol="onLayout"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="19" lineNum="9" parent="globals/MyWatchAboutView" pc="268436031" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="19" lineNum="10" parent="globals/MyWatchAboutView" pc="268436034" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="19" lineNum="13" parent="globals/MyWatchAboutView" pc="268436046" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="19" lineNum="14" parent="globals/MyWatchAboutView" pc="268436058" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="19" lineNum="15" parent="globals/MyWatchAboutView" pc="268436079" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="19" lineNum="16" parent="globals/MyWatchAboutView" pc="268436088" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="21" lineNum="27" parent="globals/MyWatchAboutView" pc="268436104" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="21" lineNum="29" parent="globals/MyWatchAboutView" pc="268436107" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="21" lineNum="30" parent="globals/MyWatchAboutView" pc="268436119" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="21" lineNum="33" parent="globals/MyWatchAboutView" pc="268436127" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="21" lineNum="36" parent="globals/MyWatchAboutView" pc="268436143" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="21" lineNum="37" parent="globals/MyWatchAboutView" pc="268436152" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="21" lineNum="40" parent="globals/MyWatchAboutView" pc="268436161" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="21" lineNum="49" parent="globals/MyWatchAboutView" pc="268436213" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="21" lineNum="58" parent="globals/MyWatchAboutView" pc="268436271" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="21" lineNum="67" parent="globals/MyWatchAboutView" pc="268436326" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="22" lineNum="26" parent="globals/MyWatchDelegate" pc="268436385" symbol="onBack"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="22" lineNum="29" parent="globals/MyWatchDelegate" pc="268436387" symbol="onBack"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="23" lineNum="11" parent="globals/MyWatchDelegate" pc="268436389" symbol="onMenu"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="23" lineNum="12" parent="globals/MyWatchDelegate" pc="268436392" symbol="onMenu"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="23" lineNum="13" parent="globals/MyWatchDelegate" pc="268436412" symbol="onMenu"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="23" lineNum="14" parent="globals/MyWatchDelegate" pc="268436449" symbol="onMenu"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="24" lineNum="33" parent="globals/MyWatchDelegate" pc="268436451" symbol="onSwipe"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="24" lineNum="34" parent="globals/MyWatchDelegate" pc="268436454" symbol="onSwipe"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="24" lineNum="36" parent="globals/MyWatchDelegate" pc="268436463" symbol="onSwipe"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="24" lineNum="37" parent="globals/MyWatchDelegate" pc="268436470" symbol="onSwipe"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="24" lineNum="38" parent="globals/MyWatchDelegate" pc="268436517" symbol="onSwipe"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="24" lineNum="39" parent="globals/MyWatchDelegate" pc="268436525" symbol="onSwipe"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="24" lineNum="40" parent="globals/MyWatchDelegate" pc="268436572" symbol="onSwipe"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="24" lineNum="41" parent="globals/MyWatchDelegate" pc="268436580" symbol="onSwipe"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="24" lineNum="42" parent="globals/MyWatchDelegate" pc="268436627" symbol="onSwipe"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="24" lineNum="43" parent="globals/MyWatchDelegate" pc="268436635" symbol="onSwipe"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="24" lineNum="46" parent="globals/MyWatchDelegate" pc="268436682" symbol="onSwipe"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="24" lineNum="47" parent="globals/MyWatchDelegate" pc="268436693" symbol="onSwipe"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="25" lineNum="6" parent="globals/MyWatchDelegate" pc="268436695" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="25" lineNum="7" parent="globals/MyWatchDelegate" pc="268436697" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="26" lineNum="18" parent="globals/MyWatchDelegate" pc="268436710" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="26" lineNum="19" parent="globals/MyWatchDelegate" pc="268436712" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="26" lineNum="21" parent="globals/MyWatchDelegate" pc="268436756" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchDelegate.mc" id="26" lineNum="22" parent="globals/MyWatchDelegate" pc="268436767" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="27" lineNum="86" parent="globals/MyWatchAboutDelegate" pc="268436769" symbol="onBack"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="27" lineNum="88" parent="globals/MyWatchAboutDelegate" pc="268436771" symbol="onBack"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="27" lineNum="89" parent="globals/MyWatchAboutDelegate" pc="268436786" symbol="onBack"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="28" lineNum="82" parent="globals/MyWatchAboutDelegate" pc="268436788" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchAboutView.mc" id="28" lineNum="83" parent="globals/MyWatchAboutDelegate" pc="268436790" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="29" lineNum="26" parent="globals/MyWatchMenuView" pc="268436803" symbol="onShow"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="29" lineNum="28" parent="globals/MyWatchMenuView" pc="268436806" symbol="onShow"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="29" lineNum="29" parent="globals/MyWatchMenuView" pc="268436818" symbol="onShow"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="29" lineNum="30" parent="globals/MyWatchMenuView" pc="268436839" symbol="onShow"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="29" lineNum="31" parent="globals/MyWatchMenuView" pc="268436848" symbol="onShow"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="30" lineNum="22" parent="globals/MyWatchMenuView" pc="268436864" symbol="onLayout"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="30" lineNum="23" parent="globals/MyWatchMenuView" pc="268436866" symbol="onLayout"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="31" lineNum="90" parent="globals/MyWatchMenuView" pc="268436900" symbol="getSelectedIndex"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="31" lineNum="91" parent="globals/MyWatchMenuView" pc="268436902" symbol="getSelectedIndex"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="32" lineNum="11" parent="globals/MyWatchMenuView" pc="268436908" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="32" lineNum="12" parent="globals/MyWatchMenuView" pc="268436911" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="32" lineNum="15" parent="globals/MyWatchMenuView" pc="268436923" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="32" lineNum="16" parent="globals/MyWatchMenuView" pc="268436935" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="32" lineNum="17" parent="globals/MyWatchMenuView" pc="268436956" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="32" lineNum="18" parent="globals/MyWatchMenuView" pc="268436965" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="34" lineNum="83" parent="globals/MyWatchMenuView" pc="268436981" symbol="moveDown"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="34" lineNum="84" parent="globals/MyWatchMenuView" pc="268436983" symbol="moveDown"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="34" lineNum="85" parent="globals/MyWatchMenuView" pc="268437006" symbol="moveDown"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="34" lineNum="86" parent="globals/MyWatchMenuView" pc="268437021" symbol="moveDown"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="35" lineNum="35" parent="globals/MyWatchMenuView" pc="268437036" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="35" lineNum="37" parent="globals/MyWatchMenuView" pc="268437039" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="35" lineNum="38" parent="globals/MyWatchMenuView" pc="268437051" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="35" lineNum="41" parent="globals/MyWatchMenuView" pc="268437059" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="35" lineNum="42" parent="globals/MyWatchMenuView" pc="268437068" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="35" lineNum="45" parent="globals/MyWatchMenuView" pc="268437077" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="35" lineNum="46" parent="globals/MyWatchMenuView" pc="268437093" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="35" lineNum="55" parent="globals/MyWatchMenuView" pc="268437119" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="35" lineNum="57" parent="globals/MyWatchMenuView" pc="268437139" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="35" lineNum="58" parent="globals/MyWatchMenuView" pc="268437150" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="35" lineNum="60" parent="globals/MyWatchMenuView" pc="268437169" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="35" lineNum="63" parent="globals/MyWatchMenuView" pc="268437184" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="36" lineNum="76" parent="globals/MyWatchMenuView" pc="268437236" symbol="moveUp"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="36" lineNum="77" parent="globals/MyWatchMenuView" pc="268437238" symbol="moveUp"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="36" lineNum="78" parent="globals/MyWatchMenuView" pc="268437248" symbol="moveUp"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="36" lineNum="79" parent="globals/MyWatchMenuView" pc="268437263" symbol="moveUp"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="37" lineNum="104" parent="globals/MyWatchMenuDelegate" pc="268437278" symbol="onBack"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="37" lineNum="106" parent="globals/MyWatchMenuDelegate" pc="268437280" symbol="onBack"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="37" lineNum="107" parent="globals/MyWatchMenuDelegate" pc="268437295" symbol="onBack"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="38" lineNum="130" parent="globals/MyWatchMenuDelegate" pc="268437297" symbol="onPreviousPage"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="38" lineNum="131" parent="globals/MyWatchMenuDelegate" pc="268437299" symbol="onPreviousPage"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="38" lineNum="132" parent="globals/MyWatchMenuDelegate" pc="268437311" symbol="onPreviousPage"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="39" lineNum="99" parent="globals/MyWatchMenuDelegate" pc="268437313" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="39" lineNum="100" parent="globals/MyWatchMenuDelegate" pc="268437315" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="39" lineNum="101" parent="globals/MyWatchMenuDelegate" pc="268437327" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="40" lineNum="110" parent="globals/MyWatchMenuDelegate" pc="268437337" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="40" lineNum="111" parent="globals/MyWatchMenuDelegate" pc="268437340" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="40" lineNum="113" parent="globals/MyWatchMenuDelegate" pc="268437353" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="40" lineNum="115" parent="globals/MyWatchMenuDelegate" pc="268437360" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="40" lineNum="116" parent="globals/MyWatchMenuDelegate" pc="268437380" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="40" lineNum="117" parent="globals/MyWatchMenuDelegate" pc="268437420" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="40" lineNum="119" parent="globals/MyWatchMenuDelegate" pc="268437428" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="40" lineNum="122" parent="globals/MyWatchMenuDelegate" pc="268437482" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="41" lineNum="125" parent="globals/MyWatchMenuDelegate" pc="268437484" symbol="onNextPage"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="41" lineNum="126" parent="globals/MyWatchMenuDelegate" pc="268437486" symbol="onNextPage"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchMenuView.mc" id="41" lineNum="127" parent="globals/MyWatchMenuDelegate" pc="268437498" symbol="onNextPage"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\SunPredictApp.mc" id="42" lineNum="21" parent="globals/SunPredictApp" pc="268437500" symbol="onStart"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\SunPredictApp.mc" id="43" lineNum="29" parent="globals/SunPredictApp" pc="268437503" symbol="getInitialView"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\SunPredictApp.mc" id="43" lineNum="30" parent="globals/SunPredictApp" pc="268437505" symbol="getInitialView"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\SunPredictApp.mc" id="44" lineNum="16" parent="globals/SunPredictApp" pc="268437552" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\SunPredictApp.mc" id="44" lineNum="17" parent="globals/SunPredictApp" pc="268437554" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\SunPredictApp.mc" id="45" lineNum="25" parent="globals/SunPredictApp" pc="268437567" symbol="onStop"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="46" lineNum="102" parent="globals/MyWatchSettingsDelegate" pc="268437570" symbol="onBack"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="46" lineNum="104" parent="globals/MyWatchSettingsDelegate" pc="268437572" symbol="onBack"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="46" lineNum="105" parent="globals/MyWatchSettingsDelegate" pc="268437587" symbol="onBack"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="47" lineNum="97" parent="globals/MyWatchSettingsDelegate" pc="268437589" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="47" lineNum="98" parent="globals/MyWatchSettingsDelegate" pc="268437591" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="47" lineNum="99" parent="globals/MyWatchSettingsDelegate" pc="268437603" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="48" lineNum="108" parent="globals/MyWatchSettingsDelegate" pc="268437613" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="48" lineNum="110" parent="globals/MyWatchSettingsDelegate" pc="268437615" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="48" lineNum="111" parent="globals/MyWatchSettingsDelegate" pc="268437627" symbol="onSelect"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="50" lineNum="31" parent="globals/MyWatchSettingsView" pc="268437629" symbol="onLayout"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="50" lineNum="32" parent="globals/MyWatchSettingsView" pc="268437631" symbol="onLayout"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="51" lineNum="12" parent="globals/MyWatchSettingsView" pc="268437665" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="51" lineNum="13" parent="globals/MyWatchSettingsView" pc="268437668" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="51" lineNum="15" parent="globals/MyWatchSettingsView" pc="268437680" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="51" lineNum="16" parent="globals/MyWatchSettingsView" pc="268437692" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="51" lineNum="17" parent="globals/MyWatchSettingsView" pc="268437713" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="51" lineNum="18" parent="globals/MyWatchSettingsView" pc="268437722" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="51" lineNum="22" parent="globals/MyWatchSettingsView" pc="268437737" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="51" lineNum="23" parent="globals/MyWatchSettingsView" pc="268437745" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="51" lineNum="24" parent="globals/MyWatchSettingsView" pc="268437765" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="51" lineNum="25" parent="globals/MyWatchSettingsView" pc="268437782" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="51" lineNum="26" parent="globals/MyWatchSettingsView" pc="268437791" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="53" lineNum="38" parent="globals/MyWatchSettingsView" pc="268437808" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="53" lineNum="40" parent="globals/MyWatchSettingsView" pc="268437811" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="53" lineNum="41" parent="globals/MyWatchSettingsView" pc="268437823" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="53" lineNum="44" parent="globals/MyWatchSettingsView" pc="268437831" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="53" lineNum="45" parent="globals/MyWatchSettingsView" pc="268437840" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="53" lineNum="48" parent="globals/MyWatchSettingsView" pc="268437849" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="53" lineNum="49" parent="globals/MyWatchSettingsView" pc="268437865" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="53" lineNum="58" parent="globals/MyWatchSettingsView" pc="268437917" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="53" lineNum="67" parent="globals/MyWatchSettingsView" pc="268437975" symbol="onUpdate"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="54" lineNum="79" parent="globals/MyWatchSettingsView" pc="268438011" symbol="cycleColor"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="54" lineNum="81" parent="globals/MyWatchSettingsView" pc="268438014" symbol="cycleColor"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="54" lineNum="82" parent="globals/MyWatchSettingsView" pc="268438041" symbol="cycleColor"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="54" lineNum="85" parent="globals/MyWatchSettingsView" pc="268438059" symbol="cycleColor"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="54" lineNum="86" parent="globals/MyWatchSettingsView" pc="268438071" symbol="cycleColor"/>
+        <entry filename="D:\\EDB\\nightshade\\source\\MyWatchSettingsView.mc" id="54" lineNum="89" parent="globals/MyWatchSettingsView" pc="268438091" symbol="cycleColor"/>
+        <entry filename="D:\\EDB\\nightshade\\gen\\006-B4313-00\\source\\Rez.mcgen" id="55" lineNum="13" parent="globals/Rez/Layouts" pc="268438103" symbol="MainLayout"/>
+        <entry filename="D:\\EDB\\nightshade\\gen\\006-B4313-00\\source\\Rez.mcgen" id="55" lineNum="14" parent="globals/Rez/Layouts" pc="268438113" symbol="MainLayout"/>
+        <entry filename="D:\\EDB\\nightshade\\gen\\006-B4313-00\\source\\Rez.mcgen" id="56" lineNum="19" parent="globals/Rez/Menus/MainMenu" pc="268438116" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\EDB\\nightshade\\gen\\006-B4313-00\\source\\Rez.mcgen" id="57" lineNum="20" parent="globals/Rez/Menus/MainMenu" pc="268438128" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\gen\\006-B4313-00\\source\\Rez.mcgen" id="57" lineNum="21" parent="globals/Rez/Menus/MainMenu" pc="268438130" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\gen\\006-B4313-00\\source\\Rez.mcgen" id="57" lineNum="22" parent="globals/Rez/Menus/MainMenu" pc="268438142" symbol="initialize"/>
+        <entry filename="D:\\EDB\\nightshade\\gen\\006-B4313-00\\source\\Rez.mcgen" id="57" lineNum="23" parent="globals/Rez/Menus/MainMenu" pc="268438187" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="52" symbol="Version"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="5" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="34" method="true" symbol="MainLayout"/>
+        <entry id="15" object="true" symbol="SunPredictApp"/>
+        <entry id="28" symbol="&lt;globals/MyWatchSettingsView/&lt;&gt;colorOptions&gt;"/>
+        <entry field="true" id="48" symbol="SwipedDown"/>
+        <entry id="23" method="true" symbol="moveUp"/>
+        <entry field="true" id="27" symbol="&lt;globals/MyWatchSettingsDelegate/&lt;&gt;view&gt;"/>
+        <entry id="8" object="true" symbol="MyWatchAboutView"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="31" method="true" symbol="cycleColor"/>
+        <entry field="true" id="32" symbol="&lt;globals/MyWatchSettingsView/&lt;&gt;selectedColor&gt;"/>
+        <entry field="true" id="37" symbol="AppName"/>
+        <entry field="true" id="24" symbol="&lt;globals/MyWatchMenuView/&lt;&gt;selectedIndex&gt;"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="13" object="true" symbol="MyWatchSettingsView"/>
+        <entry field="true" id="47" symbol="SettingsTitle"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry field="true" id="40" symbol="ColorLabel"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="22" method="true" symbol="moveDown"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry field="true" id="46" symbol="SelectToChange"/>
+        <entry id="21" symbol="&lt;globals/MyWatchMenuView/&lt;&gt;menuItems&gt;"/>
+        <entry id="54" symbol="item_2"/>
+        <entry id="53" symbol="item_1"/>
+        <entry id="8389079" method="true" symbol="onPreviousPage"/>
+        <entry id="19" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="9" object="true" symbol="MyWatchDelegate"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="16" symbol="&lt;globals/MyWatchView/&lt;&gt;textColor&gt;"/>
+        <entry field="true" id="44" symbol="PressSelectMessage"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="7" object="true" symbol="MyWatchAboutDelegate"/>
+        <entry field="true" id="26" symbol="&lt;globals/MyWatchMenuDelegate/&lt;&gt;view&gt;"/>
+        <entry id="35" object="true" symbol="MainMenu"/>
+        <entry id="11" object="true" symbol="MyWatchMenuView"/>
+        <entry field="true" id="45" symbol="SelectPressed"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="30" symbol="&lt;globals/MyWatchSettingsView/&lt;&gt;currentColorIndex&gt;"/>
+        <entry id="10" object="true" symbol="MyWatchMenuDelegate"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="14" object="true" symbol="MyWatchView"/>
+        <entry field="true" id="33" symbol="LauncherIcon"/>
+        <entry field="true" id="50" symbol="SwipedRight"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="43" symbol="MenuOption2"/>
+        <entry field="true" id="42" symbol="MenuOption1"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="20" method="true" symbol="getSelectedIndex"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="25" symbol="&lt;globals/MyWatchMenuView/&lt;&gt;textColor&gt;"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry field="true" id="38" symbol="Author"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="39" symbol="BackMessage"/>
+        <entry field="true" id="41" symbol="HelloMessage"/>
+        <entry field="true" id="51" symbol="SwipedUp"/>
+        <entry id="29" symbol="&lt;globals/MyWatchSettingsView/&lt;&gt;colorValues&gt;"/>
+        <entry id="18" module="true" symbol="Layouts"/>
+        <entry id="12" object="true" symbol="MyWatchSettingsDelegate"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8389078" method="true" symbol="onNextPage"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="49" symbol="SwipedLeft"/>
+        <entry id="8389101" method="true" symbol="onSwipe"/>
+        <entry field="true" id="17" symbol="&lt;globals/MyWatchAboutView/&lt;&gt;textColor&gt;"/>
+        <entry field="true" id="36" symbol="AboutTitle"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435680" name="app" stackId="1" startPc="268435624"/>
+        <entry arg="true" endPc="268435717" name="dc" stackId="1" startPc="268435682"/>
+        <entry endPc="268435789" name="app" stackId="1" startPc="268435721"/>
+        <entry arg="true" endPc="268435994" name="dc" stackId="1" startPc="268435791"/>
+        <entry endPc="268435993" name="clockTime" stackId="2" startPc="268435794"/>
+        <entry endPc="268435993" name="timeString" stackId="3" startPc="268435794"/>
+        <entry endPc="268435993" name="width" stackId="4" startPc="268435794"/>
+        <entry endPc="268435993" name="height" stackId="5" startPc="268435794"/>
+        <entry arg="true" endPc="268436030" name="dc" stackId="1" startPc="268435995"/>
+        <entry endPc="268436102" name="app" stackId="1" startPc="268436034"/>
+        <entry arg="true" endPc="268436384" name="dc" stackId="1" startPc="268436104"/>
+        <entry endPc="268436383" name="width" stackId="2" startPc="268436107"/>
+        <entry endPc="268436383" name="height" stackId="3" startPc="268436107"/>
+        <entry endPc="268436450" name="menuView" stackId="1" startPc="268436392"/>
+        <entry arg="true" endPc="268436694" name="swipeEvent" stackId="1" startPc="268436451"/>
+        <entry endPc="268436694" name="direction" stackId="2" startPc="268436454"/>
+        <entry endPc="268436862" name="app" stackId="1" startPc="268436806"/>
+        <entry arg="true" endPc="268436899" name="dc" stackId="1" startPc="268436864"/>
+        <entry endPc="268436979" name="app" stackId="1" startPc="268436911"/>
+        <entry arg="true" endPc="268437235" name="dc" stackId="1" startPc="268437036"/>
+        <entry endPc="268437234" name="width" stackId="2" startPc="268437039"/>
+        <entry endPc="268437234" name="height" stackId="3" startPc="268437039"/>
+        <entry endPc="268437234" name="i" stackId="4" startPc="268437139"/>
+        <entry arg="true" endPc="268437336" name="v" stackId="1" startPc="268437313"/>
+        <entry endPc="268437483" name="index" stackId="1" startPc="268437340"/>
+        <entry endPc="268437416" name="settingsView" stackId="2" startPc="268437360"/>
+        <entry arg="true" endPc="268437612" name="v" stackId="1" startPc="268437589"/>
+        <entry arg="true" endPc="268437664" name="dc" stackId="1" startPc="268437629"/>
+        <entry endPc="268437806" name="app" stackId="1" startPc="268437668"/>
+        <entry endPc="268437806" name="i" stackId="2" startPc="268437765"/>
+        <entry arg="true" endPc="268438010" name="dc" stackId="1" startPc="268437808"/>
+        <entry endPc="268438009" name="width" stackId="2" startPc="268437811"/>
+        <entry endPc="268438009" name="height" stackId="3" startPc="268437811"/>
+        <entry endPc="268438101" name="app" stackId="1" startPc="268438014"/>
+        <entry arg="true" endPc="268438115" name="dc" stackId="1" startPc="268438103"/>
+    </localVars>
+    <deviceInfo deviceVersion="5c7ae9cf907f88c116a91dc4ffd75be9b5b7d2e9" partNumber="006-B4313-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MenuOption2"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MenuOption1"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLabel"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Author"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SelectToChange"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SwipedUp"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SwipedLeft"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SwipedRight"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AboutTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="PressSelectMessage"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackMessage"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SettingsTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SwipedDown"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Version"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="HelloMessage"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SelectPressed"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/MyWatchView" offset="197" parentId="globals" symbolId="MyWatchView" type="class"/>
+        <dataEntry label="globals/MyWatchAboutView" offset="286" parentId="globals" symbolId="MyWatchAboutView" type="class"/>
+        <dataEntry label="globals/Rez" offset="375" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/MyWatchDelegate" offset="437" parentId="globals" symbolId="MyWatchDelegate" type="class"/>
+        <dataEntry label="globals/MyWatchAboutDelegate" offset="517" parentId="globals" symbolId="MyWatchAboutDelegate" type="class"/>
+        <dataEntry label="globals/MyWatchMenuView" offset="570" parentId="globals" symbolId="MyWatchMenuView" type="class"/>
+        <dataEntry label="globals/MyWatchMenuDelegate" offset="704" parentId="globals" symbolId="MyWatchMenuDelegate" type="class"/>
+        <dataEntry label="globals/SunPredictApp" offset="793" parentId="globals" symbolId="SunPredictApp" type="class"/>
+        <dataEntry label="globals/MyWatchSettingsDelegate" offset="864" parentId="globals" symbolId="MyWatchSettingsDelegate" type="class"/>
+        <dataEntry label="globals/MyWatchSettingsView" offset="935" parentId="globals" symbolId="MyWatchSettingsView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1060" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1095" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1130" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1165" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1344" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="MyWatchView" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="getApp" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="MyWatchAboutView" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="Rez" startPc="268435505">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435536" name="&lt;init&gt;" parent="MyWatchDelegate" startPc="268435525">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435548" name="&lt;init&gt;" parent="MyWatchAboutDelegate" startPc="268435537">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435560" name="&lt;init&gt;" parent="MyWatchMenuView" startPc="268435549">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435572" name="&lt;init&gt;" parent="MyWatchMenuDelegate" startPc="268435561">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435584" name="&lt;init&gt;" parent="SunPredictApp" startPc="268435573">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435596" name="&lt;init&gt;" parent="MyWatchSettingsDelegate" startPc="268435585">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435620" name="&lt;init&gt;" parent="MyWatchSettingsView" startPc="268435597">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435681" name="onShow" parent="MyWatchView" startPc="268435621">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435717" name="onLayout" parent="MyWatchView" startPc="268435682">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435790" name="initialize" parent="MyWatchView" startPc="268435718">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="MyWatchView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435994" name="onUpdate" parent="MyWatchView" startPc="268435791">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="MyWatchAboutView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436030" name="onLayout" parent="MyWatchAboutView" startPc="268435995">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436103" name="initialize" parent="MyWatchAboutView" startPc="268436031">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="MyWatchAboutView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436384" name="onUpdate" parent="MyWatchAboutView" startPc="268436104">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436388" name="onBack" parent="MyWatchDelegate" startPc="268436385">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436450" name="onMenu" parent="MyWatchDelegate" startPc="268436389">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436694" name="onSwipe" parent="MyWatchDelegate" startPc="268436451">
+            <param id="swipeEvent"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436709" name="initialize" parent="MyWatchDelegate" startPc="268436695">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436768" name="onSelect" parent="MyWatchDelegate" startPc="268436710">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436787" name="onBack" parent="MyWatchAboutDelegate" startPc="268436769">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436802" name="initialize" parent="MyWatchAboutDelegate" startPc="268436788">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436863" name="onShow" parent="MyWatchMenuView" startPc="268436803">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436899" name="onLayout" parent="MyWatchMenuView" startPc="268436864">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436907" name="getSelectedIndex" parent="MyWatchMenuView" startPc="268436900">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436980" name="initialize" parent="MyWatchMenuView" startPc="268436908">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="MyWatchMenuView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437035" name="moveDown" parent="MyWatchMenuView" startPc="268436981">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437235" name="onUpdate" parent="MyWatchMenuView" startPc="268437036">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437277" name="moveUp" parent="MyWatchMenuView" startPc="268437236">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437296" name="onBack" parent="MyWatchMenuDelegate" startPc="268437278">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437312" name="onPreviousPage" parent="MyWatchMenuDelegate" startPc="268437297">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437336" name="initialize" parent="MyWatchMenuDelegate" startPc="268437313">
+            <param id="v"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437483" name="onSelect" parent="MyWatchMenuDelegate" startPc="268437337">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437499" name="onNextPage" parent="MyWatchMenuDelegate" startPc="268437484">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437502" name="onStart" parent="SunPredictApp" startPc="268437500">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437551" name="getInitialView" parent="SunPredictApp" startPc="268437503">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437566" name="initialize" parent="SunPredictApp" startPc="268437552">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437569" name="onStop" parent="SunPredictApp" startPc="268437567">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437588" name="onBack" parent="MyWatchSettingsDelegate" startPc="268437570">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437612" name="initialize" parent="MyWatchSettingsDelegate" startPc="268437589">
+            <param id="v"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437628" name="onSelect" parent="MyWatchSettingsDelegate" startPc="268437613">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="MyWatchSettingsView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437664" name="onLayout" parent="MyWatchSettingsView" startPc="268437629">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437807" name="initialize" parent="MyWatchSettingsView" startPc="268437665">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="MyWatchSettingsView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438010" name="onUpdate" parent="MyWatchSettingsView" startPc="268437808">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438102" name="cycleColor" parent="MyWatchSettingsView" startPc="268438011">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438115" name="MainLayout" parent="Layouts" startPc="268438103">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438127" name="&lt;init&gt;" parent="MainMenu" startPc="268438116">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438232" name="initialize" parent="MainMenu" startPc="268438128">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

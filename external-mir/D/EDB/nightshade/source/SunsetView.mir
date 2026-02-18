@@ -1,0 +1,357 @@
+[ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Time,2,14,18]; ]
+import Toybox.Time;
+[ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [WatchUi,3,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [System,4,14,20]; ]
+import Toybox.System;
+[ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 6; @symbol_classdef = [SunsetView,6,6,16]; @symbol_extends<0> = [WatchUi,6,25,32]; @symbol_extends<1> = [View,6,33,37]; ]
+class SunsetView extends WatchUi.View {
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 8; @position = 8; @symbol_vardef = [terrainSunset,8,8,21]; ]
+    var terrainSunset;
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 9; @position = 8; @symbol_vardef = [sunsetAzimuth,9,8,21]; ]
+    var sunsetAzimuth;
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 10; @position = 8; @symbol_vardef = [sunAltitude,10,8,19]; ]
+    var sunAltitude;
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 11; @position = 8; @symbol_vardef = [userLocation,11,8,20]; ]
+    var userLocation;
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 13; @symbol_functiondef = [initialize,13,13,23]; @symbol_param<0> = [params,13,24,30]; ]
+    function initialize(params) as Void {
+D__EDB_nightshade_source_SunsetView_mc_13_32_15_4_start:
+[ "D:\EDB\nightshade\source\SunsetView.mc" 14 8 ]
+        symbol [ WatchUi %tmp.1 14 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ View %tmp.2 14 16 20 ];
+        %tmp.2 = getv %tmp.1 :View;
+        symbol [ initialize %tmp.3 14 21 31 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D__EDB_nightshade_source_SunsetView_mc_13_32_15_4_stop:
+    }
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 17; @symbol_functiondef = [setTerrainSunset,17,13,29]; @symbol_param<0> = [sunset,17,30,36]; @symbol_param<1> = [azimuth,17,38,45]; @symbol_param<2> = [altitude,17,47,55]; ]
+    function setTerrainSunset(sunset, azimuth, altitude) {
+D__EDB_nightshade_source_SunsetView_mc_17_57_21_4_start:
+[ "D:\EDB\nightshade\source\SunsetView.mc" 18 8 ]
+        %tmp.1 = lgetv %sunset;
+        symbol [ sunset %tmp.1 18 24 30 ];
+        symbol [ terrainSunset ? 18 8 21 ];
+        putv self :terrainSunset %tmp.1;
+[ "D:\EDB\nightshade\source\SunsetView.mc" 19 8 ]
+        %tmp.2 = lgetv %azimuth;
+        symbol [ azimuth %tmp.2 19 24 31 ];
+        symbol [ sunsetAzimuth ? 19 8 21 ];
+        putv self :sunsetAzimuth %tmp.2;
+[ "D:\EDB\nightshade\source\SunsetView.mc" 20 8 ]
+        %tmp.3 = lgetv %altitude;
+        symbol [ altitude %tmp.3 20 22 30 ];
+        symbol [ sunAltitude ? 20 8 19 ];
+        putv self :sunAltitude %tmp.3;
+D__EDB_nightshade_source_SunsetView_mc_17_57_21_4_stop:
+    }
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 23; @symbol_functiondef = [onUpdate,23,13,21]; @symbol_param<0> = [dc,23,22,24]; @symbol_param<0>_type<0> = [Graphics,23,28,36]; @symbol_param<0>_type<1> = [Dc,23,37,39]; ]
+    function onUpdate(dc as Graphics.Dc) {
+D__EDB_nightshade_source_SunsetView_mc_23_41_49_4_start:
+[ "D:\EDB\nightshade\source\SunsetView.mc" 24 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 24 8 10 ];
+        symbol [ setColor %tmp.2 24 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 24 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 24 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Graphics %tmp.5 24 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 24 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "D:\EDB\nightshade\source\SunsetView.mc" 25 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 25 8 10 ];
+        symbol [ clear %tmp.8 25 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "D:\EDB\nightshade\source\SunsetView.mc" 28 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 28 8 10 ];
+        symbol [ setColor %tmp.10 28 11 19 ];
+        %tmp.10 = getv function %tmp.9 :setColor;
+        symbol [ Graphics %tmp.11 28 20 28 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_ORANGE %tmp.12 28 29 41 ];
+        %tmp.12 = getv %tmp.11 :COLOR_ORANGE;
+        symbol [ Graphics %tmp.13 28 43 51 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.14 28 52 63 ];
+        %tmp.14 = getv %tmp.13 :COLOR_BLACK;
+        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "D:\EDB\nightshade\source\SunsetView.mc" 29 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 29 8 10 ];
+        symbol [ drawText %tmp.16 29 11 19 ];
+        %tmp.16 = getv function %tmp.15 :drawText;
+        %tmp.17 = 240;
+        %tmp.18 = 20;
+        symbol [ Graphics %tmp.19 29 29 37 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.20 29 38 49 ];
+        %tmp.20 = getv %tmp.19 :FONT_MEDIUM;
+        %tmp.21 = "Terrain Sunset";
+        symbol [ Graphics %tmp.22 29 69 77 ];
+        %tmp.22 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.23 29 78 97 ];
+        %tmp.23 = getv %tmp.22 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.15 %tmp.16(%tmp.17, %tmp.18, %tmp.20, %tmp.21, %tmp.23);
+[ "D:\EDB\nightshade\source\SunsetView.mc" 31 8 ]
+D__EDB_nightshade_source_SunsetView_mc_31_8_48_8_if_stmt:
+        symbol [ terrainSunset %tmp.25 31 12 25 ];
+        %tmp.25 = getv ? :terrainSunset;
+        %tmp.26 = null;
+        %tmp.27 = ne %tmp.25 %tmp.26;
+        bf %tmp.27 @D__EDB_nightshade_source_SunsetView_mc_31_8_48_8_if_else_false;
+D__EDB_nightshade_source_SunsetView_mc_31_8_48_8_if_true:
+D__EDB_nightshade_source_SunsetView_mc_31_35_45_8_start:
+[ "D:\EDB\nightshade\source\SunsetView.mc" 32 12 ]
+        [ "D__EDB_nightshade_source_SunsetView_mc_31_35_45_8_start" "D__EDB_nightshade_source_SunsetView_mc_31_35_45_8_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 32 16 20 ];
+        symbol [ Time %tmp.28 32 23 27 ];
+        %tmp.28 = getm $.Toybox.Time;
+        symbol [ Gregorian %tmp.29 32 28 37 ];
+        %tmp.29 = getv %tmp.28 :Gregorian;
+        symbol [ info %tmp.30 32 38 42 ];
+        %tmp.30 = getv function %tmp.29 :info;
+        symbol [ terrainSunset %tmp.32 32 43 56 ];
+        %tmp.32 = getv ? :terrainSunset;
+        %tmp.33 = as %tmp.32 { (!Null) };
+        symbol [ Time %tmp.34 32 58 62 ];
+        %tmp.34 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.35 32 63 75 ];
+        %tmp.35 = getv %tmp.34 :FORMAT_SHORT;
+        %tmp.36 = invoke %tmp.29 %tmp.30(%tmp.33, %tmp.35);
+        lputv %info.1 %tmp.36;
+        symbol [ info %info.1 32 16 20 ];
+[ "D:\EDB\nightshade\source\SunsetView.mc" 33 12 ]
+        [ "D__EDB_nightshade_source_SunsetView_mc_31_35_45_8_start" "D__EDB_nightshade_source_SunsetView_mc_31_35_45_8_stop" ]
+        %timeStr.2 = local;
+        symbol [ timeStr %timeStr.2 33 16 23 ];
+        %tmp.37 = lgetv %info.1;
+        symbol [ info %tmp.37 33 26 30 ];
+        symbol [ hour %tmp.38 33 31 35 ];
+        %tmp.38 = getv %tmp.37 :hour;
+        %tmp.39 = ":";
+        %tmp.40 = add %tmp.38 %tmp.39;
+D__EDB_nightshade_source_SunsetView_mc_33_45_33_67_begin:
+        %tmp.41 = lgetv %info.1;
+        symbol [ info %tmp.41 33 45 49 ];
+        symbol [ min %tmp.42 33 50 53 ];
+        %tmp.42 = getv %tmp.41 :min;
+        %tmp.43 = 10;
+        %tmp.44 = lt %tmp.42 %tmp.43;
+        bf %tmp.44 @D__EDB_nightshade_source_SunsetView_mc_33_45_33_67_else_false;
+D__EDB_nightshade_source_SunsetView_mc_33_45_33_67_true:
+        %tmp.45 = "0";
+        push %tmp.45;
+        goto @D__EDB_nightshade_source_SunsetView_mc_33_45_33_67_end;
+D__EDB_nightshade_source_SunsetView_mc_33_45_33_67_else_false:
+        %tmp.46 = "";
+        push %tmp.46;
+D__EDB_nightshade_source_SunsetView_mc_33_45_33_67_end:
+        %tmp.47 = phi [%tmp.44 @D__EDB_nightshade_source_SunsetView_mc_33_45_33_67_begin] [%tmp.45 @D__EDB_nightshade_source_SunsetView_mc_33_45_33_67_true] [%tmp.46 @D__EDB_nightshade_source_SunsetView_mc_33_45_33_67_else_false] [%tmp.47 @D__EDB_nightshade_source_SunsetView_mc_33_45_33_67_end];
+        %tmp.48 = add %tmp.40 %tmp.47;
+        %tmp.49 = lgetv %info.1;
+        symbol [ info %tmp.49 33 73 77 ];
+        symbol [ min %tmp.50 33 78 81 ];
+        %tmp.50 = getv %tmp.49 :min;
+        %tmp.51 = add %tmp.48 %tmp.50;
+        lputv %timeStr.2 %tmp.51;
+        symbol [ timeStr %timeStr.2 33 16 23 ];
+[ "D:\EDB\nightshade\source\SunsetView.mc" 35 12 ]
+        %tmp.52 = lgetv %dc;
+        symbol [ dc %tmp.52 35 12 14 ];
+        symbol [ setColor %tmp.53 35 15 23 ];
+        %tmp.53 = getv function %tmp.52 :setColor;
+        symbol [ Graphics %tmp.54 35 24 32 ];
+        %tmp.54 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.55 35 33 44 ];
+        %tmp.55 = getv %tmp.54 :COLOR_WHITE;
+        symbol [ Graphics %tmp.56 35 46 54 ];
+        %tmp.56 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.57 35 55 66 ];
+        %tmp.57 = getv %tmp.56 :COLOR_BLACK;
+        invoke %tmp.52 %tmp.53(%tmp.55, %tmp.57);
+[ "D:\EDB\nightshade\source\SunsetView.mc" 38 12 ]
+        %tmp.58 = lgetv %dc;
+        symbol [ dc %tmp.58 38 12 14 ];
+        symbol [ drawText %tmp.59 38 15 23 ];
+        %tmp.59 = getv function %tmp.58 :drawText;
+        %tmp.60 = 240;
+        %tmp.61 = 80;
+        symbol [ Graphics %tmp.62 38 33 41 ];
+        %tmp.62 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MILD %tmp.63 38 42 58 ];
+        %tmp.63 = getv %tmp.62 :FONT_NUMBER_MILD;
+        %tmp.64 = lgetv %timeStr.2;
+        symbol [ timeStr %tmp.64 38 60 67 ];
+        symbol [ Graphics %tmp.65 38 69 77 ];
+        %tmp.65 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.66 38 78 97 ];
+        %tmp.66 = getv %tmp.65 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.58 %tmp.59(%tmp.60, %tmp.61, %tmp.63, %tmp.64, %tmp.66);
+[ "D:\EDB\nightshade\source\SunsetView.mc" 41 12 ]
+        %tmp.67 = lgetv %dc;
+        symbol [ dc %tmp.67 41 12 14 ];
+        symbol [ drawText %tmp.68 41 15 23 ];
+        %tmp.68 = getv function %tmp.67 :drawText;
+        %tmp.69 = 240;
+        %tmp.70 = 150;
+        symbol [ Graphics %tmp.71 41 34 42 ];
+        %tmp.71 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.72 41 43 53 ];
+        %tmp.72 = getv %tmp.71 :FONT_SMALL;
+        %tmp.73 = "Azimuth: ";
+        symbol [ sunsetAzimuth %tmp.75 41 69 82 ];
+        %tmp.75 = getv ? :sunsetAzimuth;
+        symbol [ toNumber %tmp.76 41 83 91 ];
+        %tmp.76 = getv function %tmp.75 :toNumber;
+        %tmp.77 = invoke %tmp.75 %tmp.76();
+        %tmp.78 = add %tmp.73 %tmp.77;
+        %tmp.79 = "°";
+        %tmp.80 = add %tmp.78 %tmp.79;
+        symbol [ Graphics %tmp.81 41 101 109 ];
+        %tmp.81 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.82 41 110 129 ];
+        %tmp.82 = getv %tmp.81 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.67 %tmp.68(%tmp.69, %tmp.70, %tmp.72, %tmp.80, %tmp.82);
+[ "D:\EDB\nightshade\source\SunsetView.mc" 44 12 ]
+        %tmp.83 = lgetv %dc;
+        symbol [ dc %tmp.83 44 12 14 ];
+        symbol [ drawText %tmp.84 44 15 23 ];
+        %tmp.84 = getv function %tmp.83 :drawText;
+        %tmp.85 = 240;
+        %tmp.86 = 180;
+        symbol [ Graphics %tmp.87 44 34 42 ];
+        %tmp.87 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.88 44 43 53 ];
+        %tmp.88 = getv %tmp.87 :FONT_SMALL;
+        %tmp.89 = "Sun Altitude: ";
+        symbol [ sunAltitude %tmp.91 44 74 85 ];
+        %tmp.91 = getv ? :sunAltitude;
+        symbol [ toNumber %tmp.92 44 86 94 ];
+        %tmp.92 = getv function %tmp.91 :toNumber;
+        %tmp.93 = invoke %tmp.91 %tmp.92();
+        %tmp.94 = add %tmp.89 %tmp.93;
+        %tmp.95 = "°";
+        %tmp.96 = add %tmp.94 %tmp.95;
+        symbol [ Graphics %tmp.97 44 104 112 ];
+        %tmp.97 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.98 44 113 132 ];
+        %tmp.98 = getv %tmp.97 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.83 %tmp.84(%tmp.85, %tmp.86, %tmp.88, %tmp.96, %tmp.98);
+D__EDB_nightshade_source_SunsetView_mc_31_35_45_8_stop:
+        goto @D__EDB_nightshade_source_SunsetView_mc_31_8_48_8_if_end;
+D__EDB_nightshade_source_SunsetView_mc_31_8_48_8_if_else_false:
+D__EDB_nightshade_source_SunsetView_mc_45_15_48_8_start:
+[ "D:\EDB\nightshade\source\SunsetView.mc" 46 12 ]
+        %tmp.99 = lgetv %dc;
+        symbol [ dc %tmp.99 46 12 14 ];
+        symbol [ setColor %tmp.100 46 15 23 ];
+        %tmp.100 = getv function %tmp.99 :setColor;
+        symbol [ Graphics %tmp.101 46 24 32 ];
+        %tmp.101 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.102 46 33 45 ];
+        %tmp.102 = getv %tmp.101 :COLOR_YELLOW;
+        symbol [ Graphics %tmp.103 46 47 55 ];
+        %tmp.103 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.104 46 56 67 ];
+        %tmp.104 = getv %tmp.103 :COLOR_BLACK;
+        invoke %tmp.99 %tmp.100(%tmp.102, %tmp.104);
+[ "D:\EDB\nightshade\source\SunsetView.mc" 47 12 ]
+        %tmp.105 = lgetv %dc;
+        symbol [ dc %tmp.105 47 12 14 ];
+        symbol [ drawText %tmp.106 47 15 23 ];
+        %tmp.106 = getv function %tmp.105 :drawText;
+        %tmp.107 = 240;
+        %tmp.108 = 150;
+        symbol [ Graphics %tmp.109 47 34 42 ];
+        %tmp.109 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.110 47 43 54 ];
+        %tmp.110 = getv %tmp.109 :FONT_MEDIUM;
+        %tmp.111 = "Calculating...";
+        symbol [ Graphics %tmp.112 47 74 82 ];
+        %tmp.112 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.113 47 83 102 ];
+        %tmp.113 = getv %tmp.112 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.105 %tmp.106(%tmp.107, %tmp.108, %tmp.110, %tmp.111, %tmp.113);
+D__EDB_nightshade_source_SunsetView_mc_45_15_48_8_stop:
+D__EDB_nightshade_source_SunsetView_mc_31_8_48_8_if_end:
+D__EDB_nightshade_source_SunsetView_mc_23_41_49_4_stop:
+    }
+}
+[ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 52; @symbol_classdef = [SunsetDelegate,52,6,20]; @symbol_extends<0> = [WatchUi,52,29,36]; @symbol_extends<1> = [InputDelegate,52,37,50]; ]
+class SunsetDelegate extends WatchUi.InputDelegate {
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 52; ]
+    <init> {
+    }
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 52; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 53; @symbol_functiondef = [initialize,53,13,23]; ]
+    function initialize() as Void {
+D__EDB_nightshade_source_SunsetView_mc_53_26_55_4_start:
+[ "D:\EDB\nightshade\source\SunsetView.mc" 54 8 ]
+        symbol [ WatchUi %tmp.1 54 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ InputDelegate %tmp.2 54 16 29 ];
+        %tmp.2 = getv %tmp.1 :InputDelegate;
+        symbol [ initialize %tmp.3 54 30 40 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D__EDB_nightshade_source_SunsetView_mc_53_26_55_4_stop:
+    }
+    [ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 57; @symbol_functiondef = [onKey,57,13,18]; @symbol_param<0> = [keyEvent,57,19,27]; ]
+    function onKey(keyEvent) {
+D__EDB_nightshade_source_SunsetView_mc_57_29_61_4_start:
+[ "D:\EDB\nightshade\source\SunsetView.mc" 58 8 ]
+D__EDB_nightshade_source_SunsetView_mc_58_8_60_8_if_stmt:
+        %tmp.1 = lgetv %keyEvent;
+        symbol [ keyEvent %tmp.1 58 12 20 ];
+        symbol [ getKey %tmp.2 58 21 27 ];
+        %tmp.2 = getv function %tmp.1 :getKey;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ WatchUi %tmp.4 58 33 40 ];
+        %tmp.4 = getm $.Toybox.WatchUi;
+        symbol [ KEY_ESC %tmp.5 58 41 48 ];
+        %tmp.5 = getv %tmp.4 :KEY_ESC;
+        %tmp.6 = eq %tmp.3 %tmp.5;
+        bf %tmp.6 @D__EDB_nightshade_source_SunsetView_mc_58_8_60_8_if_end;
+D__EDB_nightshade_source_SunsetView_mc_58_8_60_8_if_true:
+D__EDB_nightshade_source_SunsetView_mc_58_50_60_8_start:
+[ "D:\EDB\nightshade\source\SunsetView.mc" 59 12 ]
+        symbol [ WatchUi %tmp.7 59 12 19 ];
+        %tmp.7 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.8 59 20 27 ];
+        %tmp.8 = getv function %tmp.7 :popView;
+        symbol [ WatchUi %tmp.9 59 28 35 ];
+        %tmp.9 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.10 59 36 51 ];
+        %tmp.10 = getv %tmp.9 :SLIDE_IMMEDIATE;
+        invoke %tmp.7 %tmp.8(%tmp.10);
+D__EDB_nightshade_source_SunsetView_mc_58_50_60_8_stop:
+        goto @D__EDB_nightshade_source_SunsetView_mc_58_8_60_8_if_end;
+D__EDB_nightshade_source_SunsetView_mc_58_8_60_8_if_end:
+D__EDB_nightshade_source_SunsetView_mc_57_29_61_4_stop:
+    }
+}
+[ @file = "D:\EDB\nightshade\source\SunsetView.mc"; @line = 1; ]
+<init> {
+}

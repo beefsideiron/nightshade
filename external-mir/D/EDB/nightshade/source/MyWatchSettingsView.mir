@@ -1,0 +1,470 @@
+[ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; ]
+using Toybox.Graphics;
+[ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Application,3,13,24]; ]
+using Toybox.Application;
+[ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 5; @symbol_classdef = [MyWatchSettingsView,5,6,25]; @symbol_extends<0> = [WatchUi,5,34,41]; @symbol_extends<1> = [View,5,42,46]; ]
+class MyWatchSettingsView extends WatchUi.View {
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 5; ]
+    <init> {
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 8 16 ]
+        %tmp.1 = newa 4;
+        %tmp.2 = "White";
+        %tmp.3 = dup %tmp.1;
+        %tmp.4 = aputv %tmp.3 0 %tmp.2;
+        %tmp.5 = "Green";
+        %tmp.6 = dup %tmp.4;
+        %tmp.7 = aputv %tmp.6 1 %tmp.5;
+        %tmp.8 = "Blue";
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 2 %tmp.8;
+        %tmp.11 = "Red";
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 3 %tmp.11;
+        putv self :colorOptions %tmp.13;
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 9 16 ]
+        %tmp.14 = newa 4;
+        symbol [ Graphics %tmp.15 9 31 39 ];
+        %tmp.15 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.16 9 40 51 ];
+        %tmp.16 = getv %tmp.15 :COLOR_WHITE;
+        %tmp.17 = dup %tmp.14;
+        %tmp.18 = aputv %tmp.17 0 %tmp.16;
+        symbol [ Graphics %tmp.19 9 53 61 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.20 9 62 73 ];
+        %tmp.20 = getv %tmp.19 :COLOR_GREEN;
+        %tmp.21 = dup %tmp.18;
+        %tmp.22 = aputv %tmp.21 1 %tmp.20;
+        symbol [ Graphics %tmp.23 9 75 83 ];
+        %tmp.23 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.24 9 84 94 ];
+        %tmp.24 = getv %tmp.23 :COLOR_BLUE;
+        %tmp.25 = dup %tmp.22;
+        %tmp.26 = aputv %tmp.25 2 %tmp.24;
+        symbol [ Graphics %tmp.27 9 96 104 ];
+        %tmp.27 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.28 9 105 114 ];
+        %tmp.28 = getv %tmp.27 :COLOR_RED;
+        %tmp.29 = dup %tmp.26;
+        %tmp.30 = aputv %tmp.29 3 %tmp.28;
+        putv self :colorValues %tmp.30;
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 7; @position = 16; @symbol_vardef = [selectedColor,7,16,29]; ]
+    private
+    var selectedColor;
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 8; @position = 16; @symbol_vardef = [colorOptions,8,16,28]; ]
+    private
+    var colorOptions;
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 9; @position = 16; @symbol_vardef = [colorValues,9,16,27]; ]
+    private
+    var colorValues;
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 10; @position = 16; @symbol_vardef = [currentColorIndex,10,16,33]; ]
+    private
+    var currentColorIndex;
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 12; @symbol_functiondef = [initialize,12,13,23]; ]
+    function initialize() as Void {
+D__EDB_nightshade_source_MyWatchSettingsView_mc_12_26_29_4_start:
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 13 8 ]
+        symbol [ View %tmp.2 13 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 13 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 15 8 ]
+        [ "D__EDB_nightshade_source_MyWatchSettingsView_mc_12_26_29_4_start" "D__EDB_nightshade_source_MyWatchSettingsView_mc_12_26_29_4_stop" ]
+        %app.1 = local;
+        symbol [ app %app.1 15 12 15 ];
+        symbol [ Application %tmp.4 15 18 29 ];
+        %tmp.4 = getm $.Toybox.Application;
+        symbol [ getApp %tmp.5 15 30 36 ];
+        %tmp.5 = getv function %tmp.4 :getApp;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %app.1 %tmp.6;
+        symbol [ app %app.1 15 12 15 ];
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 16 8 ]
+        %tmp.7 = lgetv %app.1;
+        symbol [ app %tmp.7 16 24 27 ];
+        symbol [ getProperty %tmp.8 16 28 39 ];
+        %tmp.8 = getv function %tmp.7 :getProperty;
+        %tmp.9 = "mainColor";
+        %tmp.10 = invoke %tmp.7 %tmp.8(%tmp.9);
+        symbol [ selectedColor ? 16 8 21 ];
+        putv self :selectedColor %tmp.10;
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 17 8 ]
+D__EDB_nightshade_source_MyWatchSettingsView_mc_17_8_19_8_if_stmt:
+        symbol [ selectedColor %tmp.12 17 12 25 ];
+        %tmp.12 = getv ? :selectedColor;
+        %tmp.13 = null;
+        %tmp.14 = eq %tmp.12 %tmp.13;
+        bf %tmp.14 @D__EDB_nightshade_source_MyWatchSettingsView_mc_17_8_19_8_if_end;
+D__EDB_nightshade_source_MyWatchSettingsView_mc_17_8_19_8_if_true:
+D__EDB_nightshade_source_MyWatchSettingsView_mc_17_35_19_8_start:
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 18 12 ]
+        symbol [ Graphics %tmp.15 18 28 36 ];
+        %tmp.15 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.16 18 37 48 ];
+        %tmp.16 = getv %tmp.15 :COLOR_WHITE;
+        symbol [ selectedColor ? 18 12 25 ];
+        putv self :selectedColor %tmp.16;
+D__EDB_nightshade_source_MyWatchSettingsView_mc_17_35_19_8_stop:
+        goto @D__EDB_nightshade_source_MyWatchSettingsView_mc_17_8_19_8_if_end;
+D__EDB_nightshade_source_MyWatchSettingsView_mc_17_8_19_8_if_end:
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 22 8 ]
+        %tmp.17 = 0;
+        symbol [ currentColorIndex ? 22 8 25 ];
+        putv self :currentColorIndex %tmp.17;
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 23 8 ]
+        for @D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_test @D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_incr @D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_end;
+D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_init:
+        [ "D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_begin" "D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_end" ]
+        %i.2 = local;
+        symbol [ i %i.2 23 17 18 ];
+        %tmp.18 = 0;
+        lputv %i.2 %tmp.18;
+        symbol [ i %i.2 23 17 18 ];
+D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_test:
+        %tmp.19 = lgetv %i.2;
+        symbol [ i %tmp.19 23 24 25 ];
+        symbol [ colorValues %tmp.21 23 28 39 ];
+        %tmp.21 = getv ? :colorValues;
+        symbol [ size %tmp.22 23 40 44 ];
+        %tmp.22 = getv function %tmp.21 :size;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.24 = lt %tmp.19 %tmp.23;
+        bf %tmp.24 @D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_end;
+D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_begin:
+D__EDB_nightshade_source_MyWatchSettingsView_mc_23_53_28_8_start:
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 24 12 ]
+D__EDB_nightshade_source_MyWatchSettingsView_mc_24_12_27_12_if_stmt:
+        symbol [ colorValues %tmp.26 24 16 27 ];
+        %tmp.26 = getv ? :colorValues;
+        %tmp.27 = lgetv %i.2;
+        symbol [ i %tmp.27 24 28 29 ];
+        %tmp.28 = agetv %tmp.26 %tmp.27;
+        symbol [ selectedColor %tmp.30 24 34 47 ];
+        %tmp.30 = getv ? :selectedColor;
+        %tmp.31 = eq %tmp.28 %tmp.30;
+        bf %tmp.31 @D__EDB_nightshade_source_MyWatchSettingsView_mc_24_12_27_12_if_end;
+D__EDB_nightshade_source_MyWatchSettingsView_mc_24_12_27_12_if_true:
+D__EDB_nightshade_source_MyWatchSettingsView_mc_24_49_27_12_start:
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 25 16 ]
+        %tmp.32 = lgetv %i.2;
+        symbol [ i %tmp.32 25 36 37 ];
+        symbol [ currentColorIndex ? 25 16 33 ];
+        putv self :currentColorIndex %tmp.32;
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 26 16 ]
+        goto break @D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_end;
+D__EDB_nightshade_source_MyWatchSettingsView_mc_24_49_27_12_stop:
+        goto @D__EDB_nightshade_source_MyWatchSettingsView_mc_24_12_27_12_if_end;
+D__EDB_nightshade_source_MyWatchSettingsView_mc_24_12_27_12_if_end:
+D__EDB_nightshade_source_MyWatchSettingsView_mc_23_53_28_8_stop:
+D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_incr:
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 23 ]
+        %tmp.35 = lgetv %i.2;
+        symbol [ i %tmp.35 23 48 49 ];
+        %tmp.36 = add %tmp.35 1;
+        lputv %i.2 %tmp.36;
+        symbol [ i %i.2 23 48 49 ];
+        goto @D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_test;
+D__EDB_nightshade_source_MyWatchSettingsView_mc_23_8_28_8_for_end:
+D__EDB_nightshade_source_MyWatchSettingsView_mc_12_26_29_4_stop:
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 31; @symbol_functiondef = [onLayout,31,13,21]; @symbol_param<0> = [dc,31,22,24]; ]
+    function onLayout(dc) {
+D__EDB_nightshade_source_MyWatchSettingsView_mc_31_26_33_4_start:
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 32 8 ]
+        %tmp.1 = self;
+        symbol [ setLayout %tmp.2 32 8 17 ];
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        symbol [ Rez %tmp.4 32 18 21 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Layouts %tmp.5 32 22 29 ];
+        %tmp.5 = getv %tmp.4 :Layouts;
+        symbol [ MainLayout %tmp.6 32 30 40 ];
+        %tmp.6 = getv function %tmp.5 :MainLayout;
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 32 41 43 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        invoke %tmp.1 %tmp.2(%tmp.8);
+D__EDB_nightshade_source_MyWatchSettingsView_mc_31_26_33_4_stop:
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 35; @symbol_functiondef = [onShow,35,13,19]; ]
+    function onShow() {
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 38; @symbol_functiondef = [onUpdate,38,13,21]; @symbol_param<0> = [dc,38,22,24]; ]
+    function onUpdate(dc) {
+D__EDB_nightshade_source_MyWatchSettingsView_mc_38_26_74_4_start:
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 40 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 40 8 10 ];
+        symbol [ setColor %tmp.2 40 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 40 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 40 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 40 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 40 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 41 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 41 8 10 ];
+        symbol [ clear %tmp.8 41 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 44 8 ]
+        [ "D__EDB_nightshade_source_MyWatchSettingsView_mc_38_26_74_4_start" "D__EDB_nightshade_source_MyWatchSettingsView_mc_38_26_74_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 44 12 17 ];
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 44 20 22 ];
+        symbol [ getWidth %tmp.10 44 23 31 ];
+        %tmp.10 = getv function %tmp.9 :getWidth;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %width.1 %tmp.11;
+        symbol [ width %width.1 44 12 17 ];
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 45 8 ]
+        [ "D__EDB_nightshade_source_MyWatchSettingsView_mc_38_26_74_4_start" "D__EDB_nightshade_source_MyWatchSettingsView_mc_38_26_74_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 45 12 18 ];
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 45 21 23 ];
+        symbol [ getHeight %tmp.13 45 24 33 ];
+        %tmp.13 = getv function %tmp.12 :getHeight;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %height.2 %tmp.14;
+        symbol [ height %height.2 45 12 18 ];
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 48 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 48 8 10 ];
+        symbol [ setColor %tmp.16 48 11 19 ];
+        %tmp.16 = getv function %tmp.15 :setColor;
+        symbol [ selectedColor %tmp.18 48 20 33 ];
+        %tmp.18 = getv ? :selectedColor;
+        symbol [ Graphics %tmp.19 48 35 43 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.20 48 44 55 ];
+        %tmp.20 = getv %tmp.19 :COLOR_BLACK;
+        invoke %tmp.15 %tmp.16(%tmp.18, %tmp.20);
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 49 8 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 49 8 10 ];
+        symbol [ drawText %tmp.22 49 11 19 ];
+        %tmp.22 = getv function %tmp.21 :drawText;
+        %tmp.23 = lgetv %width.1;
+        symbol [ width %tmp.23 50 12 17 ];
+        %tmp.24 = 2;
+        %tmp.25 = div %tmp.23 %tmp.24;
+        %tmp.26 = 40;
+        symbol [ Graphics %tmp.27 52 12 20 ];
+        %tmp.27 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.28 52 21 32 ];
+        %tmp.28 = getv %tmp.27 :FONT_MEDIUM;
+        symbol [ WatchUi %tmp.29 53 12 19 ];
+        %tmp.29 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.30 53 20 32 ];
+        %tmp.30 = getv function %tmp.29 :loadResource;
+        symbol [ Rez %tmp.32 53 33 36 ];
+        %tmp.32 = getv ? :Rez;
+        symbol [ Strings %tmp.33 53 37 44 ];
+        %tmp.33 = getv %tmp.32 :Strings;
+        symbol [ SettingsTitle %tmp.34 53 45 58 ];
+        %tmp.34 = getv %tmp.33 :SettingsTitle;
+        %tmp.35 = invoke %tmp.29 %tmp.30(%tmp.34);
+        symbol [ Graphics %tmp.36 54 12 20 ];
+        %tmp.36 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.37 54 21 40 ];
+        %tmp.37 = getv %tmp.36 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.21 %tmp.22(%tmp.25, %tmp.26, %tmp.28, %tmp.35, %tmp.37);
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 58 8 ]
+        %tmp.38 = lgetv %dc;
+        symbol [ dc %tmp.38 58 8 10 ];
+        symbol [ drawText %tmp.39 58 11 19 ];
+        %tmp.39 = getv function %tmp.38 :drawText;
+        %tmp.40 = lgetv %width.1;
+        symbol [ width %tmp.40 59 12 17 ];
+        %tmp.41 = 2;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        %tmp.43 = lgetv %height.2;
+        symbol [ height %tmp.43 60 12 18 ];
+        %tmp.44 = 2;
+        %tmp.45 = div %tmp.43 %tmp.44;
+        %tmp.46 = 40;
+        %tmp.47 = sub %tmp.45 %tmp.46;
+        symbol [ Graphics %tmp.48 61 12 20 ];
+        %tmp.48 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.49 61 21 31 ];
+        %tmp.49 = getv %tmp.48 :FONT_SMALL;
+        symbol [ WatchUi %tmp.50 62 12 19 ];
+        %tmp.50 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.51 62 20 32 ];
+        %tmp.51 = getv function %tmp.50 :loadResource;
+        symbol [ Rez %tmp.53 62 33 36 ];
+        %tmp.53 = getv ? :Rez;
+        symbol [ Strings %tmp.54 62 37 44 ];
+        %tmp.54 = getv %tmp.53 :Strings;
+        symbol [ ColorLabel %tmp.55 62 45 55 ];
+        %tmp.55 = getv %tmp.54 :ColorLabel;
+        %tmp.56 = invoke %tmp.50 %tmp.51(%tmp.55);
+        symbol [ Graphics %tmp.57 63 12 20 ];
+        %tmp.57 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.58 63 21 40 ];
+        %tmp.58 = getv %tmp.57 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.38 %tmp.39(%tmp.42, %tmp.47, %tmp.49, %tmp.56, %tmp.58);
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 67 8 ]
+        %tmp.59 = lgetv %dc;
+        symbol [ dc %tmp.59 67 8 10 ];
+        symbol [ drawText %tmp.60 67 11 19 ];
+        %tmp.60 = getv function %tmp.59 :drawText;
+        %tmp.61 = lgetv %width.1;
+        symbol [ width %tmp.61 68 12 17 ];
+        %tmp.62 = 2;
+        %tmp.63 = div %tmp.61 %tmp.62;
+        %tmp.64 = lgetv %height.2;
+        symbol [ height %tmp.64 69 12 18 ];
+        %tmp.65 = 2;
+        %tmp.66 = div %tmp.64 %tmp.65;
+        symbol [ Graphics %tmp.67 70 12 20 ];
+        %tmp.67 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.68 70 21 32 ];
+        %tmp.68 = getv %tmp.67 :FONT_MEDIUM;
+        symbol [ colorOptions %tmp.70 71 12 24 ];
+        %tmp.70 = getv ? :colorOptions;
+        symbol [ currentColorIndex %tmp.72 71 25 42 ];
+        %tmp.72 = getv ? :currentColorIndex;
+        %tmp.73 = agetv %tmp.70 %tmp.72;
+        symbol [ Graphics %tmp.74 72 12 20 ];
+        %tmp.74 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.75 72 21 40 ];
+        %tmp.75 = getv %tmp.74 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.59 %tmp.60(%tmp.63, %tmp.66, %tmp.68, %tmp.73, %tmp.75);
+D__EDB_nightshade_source_MyWatchSettingsView_mc_38_26_74_4_stop:
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 76; @symbol_functiondef = [onHide,76,13,19]; ]
+    function onHide() {
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 79; @symbol_functiondef = [cycleColor,79,13,23]; ]
+    function cycleColor() {
+D__EDB_nightshade_source_MyWatchSettingsView_mc_79_26_90_4_start:
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 81 8 ]
+        symbol [ currentColorIndex %tmp.2 81 29 46 ];
+        %tmp.2 = getv ? :currentColorIndex;
+        %tmp.3 = 1;
+        %tmp.4 = add %tmp.2 %tmp.3;
+        symbol [ colorOptions %tmp.6 81 54 66 ];
+        %tmp.6 = getv ? :colorOptions;
+        symbol [ size %tmp.7 81 67 71 ];
+        %tmp.7 = getv function %tmp.6 :size;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = mod %tmp.4 %tmp.8;
+        symbol [ currentColorIndex ? 81 8 25 ];
+        putv self :currentColorIndex %tmp.9;
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 82 8 ]
+        symbol [ colorValues %tmp.11 82 24 35 ];
+        %tmp.11 = getv ? :colorValues;
+        symbol [ currentColorIndex %tmp.13 82 36 53 ];
+        %tmp.13 = getv ? :currentColorIndex;
+        %tmp.14 = agetv %tmp.11 %tmp.13;
+        symbol [ selectedColor ? 82 8 21 ];
+        putv self :selectedColor %tmp.14;
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 85 8 ]
+        [ "D__EDB_nightshade_source_MyWatchSettingsView_mc_79_26_90_4_start" "D__EDB_nightshade_source_MyWatchSettingsView_mc_79_26_90_4_stop" ]
+        %app.1 = local;
+        symbol [ app %app.1 85 12 15 ];
+        symbol [ Application %tmp.15 85 18 29 ];
+        %tmp.15 = getm $.Toybox.Application;
+        symbol [ getApp %tmp.16 85 30 36 ];
+        %tmp.16 = getv function %tmp.15 :getApp;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        lputv %app.1 %tmp.17;
+        symbol [ app %app.1 85 12 15 ];
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 86 8 ]
+        %tmp.18 = lgetv %app.1;
+        symbol [ app %tmp.18 86 8 11 ];
+        symbol [ setProperty %tmp.19 86 12 23 ];
+        %tmp.19 = getv function %tmp.18 :setProperty;
+        %tmp.20 = "mainColor";
+        symbol [ selectedColor %tmp.22 86 37 50 ];
+        %tmp.22 = getv ? :selectedColor;
+        invoke %tmp.18 %tmp.19(%tmp.20, %tmp.22);
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 89 8 ]
+        symbol [ WatchUi %tmp.23 89 8 15 ];
+        %tmp.23 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.24 89 16 29 ];
+        %tmp.24 = getv function %tmp.23 :requestUpdate;
+        invoke %tmp.23 %tmp.24();
+D__EDB_nightshade_source_MyWatchSettingsView_mc_79_26_90_4_stop:
+    }
+}
+[ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 93; @symbol_classdef = [MyWatchSettingsDelegate,93,6,29]; @symbol_extends<0> = [WatchUi,93,38,45]; @symbol_extends<1> = [BehaviorDelegate,93,46,62]; ]
+class MyWatchSettingsDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 93; ]
+    <init> {
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 93; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 95; @position = 16; @symbol_vardef = [view,95,16,20]; ]
+    private
+    var view;
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 97; @symbol_functiondef = [initialize,97,13,23]; @symbol_param<0> = [v,97,24,25]; ]
+    function initialize(v) as Void {
+D__EDB_nightshade_source_MyWatchSettingsView_mc_97_27_100_4_start:
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 98 8 ]
+        symbol [ BehaviorDelegate %tmp.2 98 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 98 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 99 8 ]
+        %tmp.4 = lgetv %v;
+        symbol [ v %tmp.4 99 15 16 ];
+        symbol [ view ? 99 8 12 ];
+        putv self :view %tmp.4;
+D__EDB_nightshade_source_MyWatchSettingsView_mc_97_27_100_4_stop:
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 102; @symbol_functiondef = [onBack,102,13,19]; ]
+    function onBack() {
+D__EDB_nightshade_source_MyWatchSettingsView_mc_102_22_106_4_start:
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 104 8 ]
+        symbol [ WatchUi %tmp.1 104 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 104 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 104 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.4 104 32 42 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 105 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+D__EDB_nightshade_source_MyWatchSettingsView_mc_102_22_106_4_stop:
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 108; @symbol_functiondef = [onSelect,108,13,21]; ]
+    function onSelect() {
+D__EDB_nightshade_source_MyWatchSettingsView_mc_108_24_112_4_start:
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 110 8 ]
+        symbol [ view %tmp.2 110 8 12 ];
+        %tmp.2 = getv ? :view;
+        symbol [ cycleColor %tmp.3 110 13 23 ];
+        %tmp.3 = getv function %tmp.2 :cycleColor;
+        invoke %tmp.2 %tmp.3();
+[ "D:\EDB\nightshade\source\MyWatchSettingsView.mc" 111 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+D__EDB_nightshade_source_MyWatchSettingsView_mc_108_24_112_4_stop:
+    }
+}
+[ @file = "D:\EDB\nightshade\source\MyWatchSettingsView.mc"; @line = 1; ]
+<init> {
+}

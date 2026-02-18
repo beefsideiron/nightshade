@@ -1,20 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xml/connectiq http://www.garmin.com/xml/connectiq/connectiq.xsd">
-    <iq:application entry="SunPredictApp" id="sunpredict_app_id" launcherIcon="@drawable/ic_launcher" minSdkVersion="4.2.0" name="@string/app_name" publisher="@string/publisher_name" version="1.0.0">
-        <!-- Target app for Garmin Epix Pro -->
+<?xml version="1.0"?>
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
+    <iq:application entry="SunPredictApp" id="00000001-0001-0001-0001-000000000001" launcherIcon="@Drawables.LauncherIcon" minSdkVersion="3.2.0" name="@Strings.AppName" type="watch-app" version="1.0.0">
+        <iq:permissions/>
         <iq:products>
-            <iq:product id="epix-pro"/>
+            <iq:product id="epix2pro47mm"/>
         </iq:products>
-        
-        <!-- Permissions needed for terrain sunset app -->
-        <iq:permissions>
-            <iq:uses-permission id="Positioning"/>
-            <iq:uses-permission id="FitContributor"/>
-        </iq:permissions>
-        
-        <!-- Background execution for periodic updates -->
-        <iq:background>
-            <iq:background-service event="location"/>
-        </iq:background>
+        <iq:languages/>
+        <iq:barrels/>
     </iq:application>
 </iq:manifest>

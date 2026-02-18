@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources>
-    <!-- Drawables for UI -->
-    <drawable id="ic_launcher" filename="launcher_icon.png"/>
-    
-    <!-- Colors -->
-    <color id="color_primary">#FF8800</color>
-    <color id="color_accent">#00FF00</color>
-</resources>

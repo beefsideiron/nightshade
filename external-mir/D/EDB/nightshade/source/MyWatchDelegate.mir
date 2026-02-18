@@ -1,0 +1,257 @@
+[ @file = "D:\EDB\nightshade\source\MyWatchDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "D:\EDB\nightshade\source\MyWatchDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [System,2,13,19]; ]
+using Toybox.System;
+[ @file = "D:\EDB\nightshade\source\MyWatchDelegate.mc"; @line = 4; @symbol_classdef = [MyWatchDelegate,4,6,21]; @symbol_extends<0> = [WatchUi,4,30,37]; @symbol_extends<1> = [BehaviorDelegate,4,38,54]; ]
+class MyWatchDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "D:\EDB\nightshade\source\MyWatchDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+D__EDB_nightshade_source_MyWatchDelegate_mc_6_26_8_4_start:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 7 8 ]
+        symbol [ BehaviorDelegate %tmp.2 7 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 7 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D__EDB_nightshade_source_MyWatchDelegate_mc_6_26_8_4_stop:
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchDelegate.mc"; @line = 11; @symbol_functiondef = [onMenu,11,13,19]; ]
+    function onMenu() {
+D__EDB_nightshade_source_MyWatchDelegate_mc_11_22_15_4_start:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 12 8 ]
+        [ "D__EDB_nightshade_source_MyWatchDelegate_mc_11_22_15_4_start" "D__EDB_nightshade_source_MyWatchDelegate_mc_11_22_15_4_stop" ]
+        %menuView.1 = local;
+        symbol [ menuView %menuView.1 12 12 20 ];
+        symbol [ MyWatchMenuView %tmp.4 12 27 42 ];
+        %tmp.4 = getv ? :MyWatchMenuView;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %menuView.1 %tmp.1;
+        symbol [ menuView %menuView.1 12 12 20 ];
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 13 8 ]
+        symbol [ WatchUi %tmp.5 13 8 15 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.6 13 16 24 ];
+        %tmp.6 = getv function %tmp.5 :pushView;
+        %tmp.7 = lgetv %menuView.1;
+        symbol [ menuView %tmp.7 13 25 33 ];
+        symbol [ MyWatchMenuDelegate %tmp.11 13 39 58 ];
+        %tmp.11 = getv ? :MyWatchMenuDelegate;
+        %tmp.12 = lgetv %menuView.1;
+        symbol [ menuView %tmp.12 13 59 67 ];
+        %tmp.8 = newc %tmp.11 (%tmp.12);
+        symbol [ WatchUi %tmp.13 13 70 77 ];
+        %tmp.13 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.14 13 78 86 ];
+        %tmp.14 = getv %tmp.13 :SLIDE_UP;
+        invoke %tmp.5 %tmp.6(%tmp.7, %tmp.8, %tmp.14);
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 14 8 ]
+        %tmp.15 = true;
+        ret %tmp.15;
+D__EDB_nightshade_source_MyWatchDelegate_mc_11_22_15_4_stop:
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchDelegate.mc"; @line = 18; @symbol_functiondef = [onSelect,18,13,21]; ]
+    function onSelect() {
+D__EDB_nightshade_source_MyWatchDelegate_mc_18_24_23_4_start:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 19 8 ]
+        symbol [ System %tmp.1 19 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 19 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        symbol [ WatchUi %tmp.3 19 23 30 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.4 19 31 43 ];
+        %tmp.4 = getv function %tmp.3 :loadResource;
+        symbol [ Rez %tmp.6 19 44 47 ];
+        %tmp.6 = getv ? :Rez;
+        symbol [ Strings %tmp.7 19 48 55 ];
+        %tmp.7 = getv %tmp.6 :Strings;
+        symbol [ SelectPressed %tmp.8 19 56 69 ];
+        %tmp.8 = getv %tmp.7 :SelectPressed;
+        %tmp.9 = invoke %tmp.3 %tmp.4(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 21 8 ]
+        symbol [ WatchUi %tmp.10 21 8 15 ];
+        %tmp.10 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.11 21 16 29 ];
+        %tmp.11 = getv function %tmp.10 :requestUpdate;
+        invoke %tmp.10 %tmp.11();
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 22 8 ]
+        %tmp.12 = true;
+        ret %tmp.12;
+D__EDB_nightshade_source_MyWatchDelegate_mc_18_24_23_4_stop:
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchDelegate.mc"; @line = 26; @symbol_functiondef = [onBack,26,13,19]; ]
+    function onBack() {
+D__EDB_nightshade_source_MyWatchDelegate_mc_26_22_30_4_start:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 29 8 ]
+        %tmp.1 = false;
+        ret %tmp.1;
+D__EDB_nightshade_source_MyWatchDelegate_mc_26_22_30_4_stop:
+    }
+    [ @file = "D:\EDB\nightshade\source\MyWatchDelegate.mc"; @line = 33; @symbol_functiondef = [onSwipe,33,13,20]; @symbol_param<0> = [swipeEvent,33,21,31]; ]
+    function onSwipe(swipeEvent) {
+D__EDB_nightshade_source_MyWatchDelegate_mc_33_33_48_4_start:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 34 8 ]
+        [ "D__EDB_nightshade_source_MyWatchDelegate_mc_33_33_48_4_start" "D__EDB_nightshade_source_MyWatchDelegate_mc_33_33_48_4_stop" ]
+        %direction.1 = local;
+        symbol [ direction %direction.1 34 12 21 ];
+        %tmp.1 = lgetv %swipeEvent;
+        symbol [ swipeEvent %tmp.1 34 24 34 ];
+        symbol [ getDirection %tmp.2 34 35 47 ];
+        %tmp.2 = getv function %tmp.1 :getDirection;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %direction.1 %tmp.3;
+        symbol [ direction %direction.1 34 12 21 ];
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 36 8 ]
+D__EDB_nightshade_source_MyWatchDelegate_mc_36_8_44_8_if_stmt:
+        %tmp.4 = lgetv %direction.1;
+        symbol [ direction %tmp.4 36 12 21 ];
+        symbol [ WatchUi %tmp.5 36 25 32 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ SWIPE_UP %tmp.6 36 33 41 ];
+        %tmp.6 = getv %tmp.5 :SWIPE_UP;
+        %tmp.7 = eq %tmp.4 %tmp.6;
+        bf %tmp.7 @D__EDB_nightshade_source_MyWatchDelegate_mc_36_8_44_8_if_false;
+D__EDB_nightshade_source_MyWatchDelegate_mc_36_8_44_8_if_true:
+D__EDB_nightshade_source_MyWatchDelegate_mc_36_43_38_8_start:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 37 12 ]
+        symbol [ System %tmp.8 37 12 18 ];
+        %tmp.8 = getm $.Toybox.System;
+        symbol [ println %tmp.9 37 19 26 ];
+        %tmp.9 = getv function %tmp.8 :println;
+        symbol [ WatchUi %tmp.10 37 27 34 ];
+        %tmp.10 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.11 37 35 47 ];
+        %tmp.11 = getv function %tmp.10 :loadResource;
+        symbol [ Rez %tmp.13 37 48 51 ];
+        %tmp.13 = getv ? :Rez;
+        symbol [ Strings %tmp.14 37 52 59 ];
+        %tmp.14 = getv %tmp.13 :Strings;
+        symbol [ SwipedUp %tmp.15 37 60 68 ];
+        %tmp.15 = getv %tmp.14 :SwipedUp;
+        %tmp.16 = invoke %tmp.10 %tmp.11(%tmp.15);
+        invoke %tmp.8 %tmp.9(%tmp.16);
+D__EDB_nightshade_source_MyWatchDelegate_mc_36_43_38_8_stop:
+        goto @D__EDB_nightshade_source_MyWatchDelegate_mc_36_8_44_8_if_end;
+D__EDB_nightshade_source_MyWatchDelegate_mc_36_8_44_8_if_false:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 38 15 ]
+D__EDB_nightshade_source_MyWatchDelegate_mc_38_15_44_8_if_stmt:
+        %tmp.17 = lgetv %direction.1;
+        symbol [ direction %tmp.17 38 19 28 ];
+        symbol [ WatchUi %tmp.18 38 32 39 ];
+        %tmp.18 = getm $.Toybox.WatchUi;
+        symbol [ SWIPE_DOWN %tmp.19 38 40 50 ];
+        %tmp.19 = getv %tmp.18 :SWIPE_DOWN;
+        %tmp.20 = eq %tmp.17 %tmp.19;
+        bf %tmp.20 @D__EDB_nightshade_source_MyWatchDelegate_mc_38_15_44_8_if_false;
+D__EDB_nightshade_source_MyWatchDelegate_mc_38_15_44_8_if_true:
+D__EDB_nightshade_source_MyWatchDelegate_mc_38_52_40_8_start:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 39 12 ]
+        symbol [ System %tmp.21 39 12 18 ];
+        %tmp.21 = getm $.Toybox.System;
+        symbol [ println %tmp.22 39 19 26 ];
+        %tmp.22 = getv function %tmp.21 :println;
+        symbol [ WatchUi %tmp.23 39 27 34 ];
+        %tmp.23 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.24 39 35 47 ];
+        %tmp.24 = getv function %tmp.23 :loadResource;
+        symbol [ Rez %tmp.26 39 48 51 ];
+        %tmp.26 = getv ? :Rez;
+        symbol [ Strings %tmp.27 39 52 59 ];
+        %tmp.27 = getv %tmp.26 :Strings;
+        symbol [ SwipedDown %tmp.28 39 60 70 ];
+        %tmp.28 = getv %tmp.27 :SwipedDown;
+        %tmp.29 = invoke %tmp.23 %tmp.24(%tmp.28);
+        invoke %tmp.21 %tmp.22(%tmp.29);
+D__EDB_nightshade_source_MyWatchDelegate_mc_38_52_40_8_stop:
+        goto @D__EDB_nightshade_source_MyWatchDelegate_mc_38_15_44_8_if_end;
+D__EDB_nightshade_source_MyWatchDelegate_mc_38_15_44_8_if_false:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 40 15 ]
+D__EDB_nightshade_source_MyWatchDelegate_mc_40_15_44_8_if_stmt:
+        %tmp.30 = lgetv %direction.1;
+        symbol [ direction %tmp.30 40 19 28 ];
+        symbol [ WatchUi %tmp.31 40 32 39 ];
+        %tmp.31 = getm $.Toybox.WatchUi;
+        symbol [ SWIPE_LEFT %tmp.32 40 40 50 ];
+        %tmp.32 = getv %tmp.31 :SWIPE_LEFT;
+        %tmp.33 = eq %tmp.30 %tmp.32;
+        bf %tmp.33 @D__EDB_nightshade_source_MyWatchDelegate_mc_40_15_44_8_if_false;
+D__EDB_nightshade_source_MyWatchDelegate_mc_40_15_44_8_if_true:
+D__EDB_nightshade_source_MyWatchDelegate_mc_40_52_42_8_start:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 41 12 ]
+        symbol [ System %tmp.34 41 12 18 ];
+        %tmp.34 = getm $.Toybox.System;
+        symbol [ println %tmp.35 41 19 26 ];
+        %tmp.35 = getv function %tmp.34 :println;
+        symbol [ WatchUi %tmp.36 41 27 34 ];
+        %tmp.36 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.37 41 35 47 ];
+        %tmp.37 = getv function %tmp.36 :loadResource;
+        symbol [ Rez %tmp.39 41 48 51 ];
+        %tmp.39 = getv ? :Rez;
+        symbol [ Strings %tmp.40 41 52 59 ];
+        %tmp.40 = getv %tmp.39 :Strings;
+        symbol [ SwipedLeft %tmp.41 41 60 70 ];
+        %tmp.41 = getv %tmp.40 :SwipedLeft;
+        %tmp.42 = invoke %tmp.36 %tmp.37(%tmp.41);
+        invoke %tmp.34 %tmp.35(%tmp.42);
+D__EDB_nightshade_source_MyWatchDelegate_mc_40_52_42_8_stop:
+        goto @D__EDB_nightshade_source_MyWatchDelegate_mc_40_15_44_8_if_end;
+D__EDB_nightshade_source_MyWatchDelegate_mc_40_15_44_8_if_false:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 42 15 ]
+D__EDB_nightshade_source_MyWatchDelegate_mc_42_15_44_8_if_stmt:
+        %tmp.43 = lgetv %direction.1;
+        symbol [ direction %tmp.43 42 19 28 ];
+        symbol [ WatchUi %tmp.44 42 32 39 ];
+        %tmp.44 = getm $.Toybox.WatchUi;
+        symbol [ SWIPE_RIGHT %tmp.45 42 40 51 ];
+        %tmp.45 = getv %tmp.44 :SWIPE_RIGHT;
+        %tmp.46 = eq %tmp.43 %tmp.45;
+        bf %tmp.46 @D__EDB_nightshade_source_MyWatchDelegate_mc_42_15_44_8_if_end;
+D__EDB_nightshade_source_MyWatchDelegate_mc_42_15_44_8_if_true:
+D__EDB_nightshade_source_MyWatchDelegate_mc_42_53_44_8_start:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 43 12 ]
+        symbol [ System %tmp.47 43 12 18 ];
+        %tmp.47 = getm $.Toybox.System;
+        symbol [ println %tmp.48 43 19 26 ];
+        %tmp.48 = getv function %tmp.47 :println;
+        symbol [ WatchUi %tmp.49 43 27 34 ];
+        %tmp.49 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.50 43 35 47 ];
+        %tmp.50 = getv function %tmp.49 :loadResource;
+        symbol [ Rez %tmp.52 43 48 51 ];
+        %tmp.52 = getv ? :Rez;
+        symbol [ Strings %tmp.53 43 52 59 ];
+        %tmp.53 = getv %tmp.52 :Strings;
+        symbol [ SwipedRight %tmp.54 43 60 71 ];
+        %tmp.54 = getv %tmp.53 :SwipedRight;
+        %tmp.55 = invoke %tmp.49 %tmp.50(%tmp.54);
+        invoke %tmp.47 %tmp.48(%tmp.55);
+D__EDB_nightshade_source_MyWatchDelegate_mc_42_53_44_8_stop:
+        goto @D__EDB_nightshade_source_MyWatchDelegate_mc_42_15_44_8_if_end;
+D__EDB_nightshade_source_MyWatchDelegate_mc_42_15_44_8_if_end:
+D__EDB_nightshade_source_MyWatchDelegate_mc_40_15_44_8_if_end:
+D__EDB_nightshade_source_MyWatchDelegate_mc_38_15_44_8_if_end:
+D__EDB_nightshade_source_MyWatchDelegate_mc_36_8_44_8_if_end:
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 46 8 ]
+        symbol [ WatchUi %tmp.56 46 8 15 ];
+        %tmp.56 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.57 46 16 29 ];
+        %tmp.57 = getv function %tmp.56 :requestUpdate;
+        invoke %tmp.56 %tmp.57();
+[ "D:\EDB\nightshade\source\MyWatchDelegate.mc" 47 8 ]
+        %tmp.58 = true;
+        ret %tmp.58;
+D__EDB_nightshade_source_MyWatchDelegate_mc_33_33_48_4_stop:
+    }
+}
+[ @file = "D:\EDB\nightshade\source\MyWatchDelegate.mc"; @line = 1; ]
+<init> {
+}

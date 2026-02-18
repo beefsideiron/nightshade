@@ -1,0 +1,27 @@
+<strings>
+    <string id="AppName">SunPredict</string>
+    <string id="HelloMessage">Terrain Sunset</string>
+    <string id="PressSelectMessage">Get Location</string>
+    <string id="MenuOption1">Settings</string>
+    <string id="MenuOption2">About</string>
+    
+    <!-- Settings screen -->
+    <string id="SettingsTitle">Settings</string>
+    <string id="ColorLabel">Display</string>
+    <string id="SelectToChange">SELECT to change</string>
+    
+    <!-- About screen -->
+    <string id="AboutTitle">About SunPredict</string>
+    <string id="Version">Version 1.0.0</string>
+    <string id="Author">SunPredict Dev</string>
+    
+    <!-- Common -->
+    <string id="BackMessage">Press BACK</string>
+    
+    <!-- Status messages -->
+    <string id="SelectPressed">Calculating...</string>
+    <string id="SwipedUp">Location updating</string>
+    <string id="SwipedDown">Ready</string>
+    <string id="SwipedLeft">Previous</string>
+    <string id="SwipedRight">Next</string>
+</strings>
