@@ -1,0 +1,35 @@
+{
+  "description": "Test cases for sunlight prediction validation",
+  "test_cases": [
+    {
+      "name": "Flat Desert - No Terrain Obstruction",
+      "latitude": 35.1264,
+      "longitude": -106.6055,
+      "elevation": 1600,
+      "date": "2026-02-18",
+      "terrain_file": null,
+      "expected_has_sunlight": true,
+      "notes": "Albuquerque area - should have clear sunset"
+    },
+    {
+      "name": "Mountain Valley - With Terrain Obstruction",
+      "latitude": 35.1264,
+      "longitude": -106.6055,
+      "elevation": 1600,
+      "date": "2026-02-18",
+      "terrain_file": "data/sample_terrain.json",
+      "expected_has_sunlight": true,
+      "notes": "Same location with terrain obstruction - should lose sunlight earlier"
+    },
+    {
+      "name": "High Arctic - Short Daylight",
+      "latitude": 78.2232,
+      "longitude": 15.6267,
+      "elevation": 0,
+      "date": "2026-02-18",
+      "terrain_file": null,
+      "expected_has_sunlight": false,
+      "notes": "Longyearbyen area - polar night in February"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "description": "Sample terrain elevation profile for a mountain valley",
+  "reference_elevation": 1500,
+  "elevations": {
+    "0": -5,
+    "45": 10,
+    "90": 25,
+    "135": 20,
+    "180": -2,
+    "225": 8,
+    "270": 15,
+    "315": 5
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "location": {
+    "name": "User Location",
+    "latitude": 36.810354,
+    "longitude": -4.222430,
+    "elevation": 221,
+    "timezone": "Europe/Madrid"
+  },
+  "prediction": {
+    "include_terrain": true,
+    "terrain_file": "data/user_terrain.json"
+  }
+}
